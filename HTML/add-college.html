@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004e92;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2bb0a6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #239a91;
+        }
+    </style>
+</head>
+<body>
+
+<form id="collegeForm">
+    <h2>Add College</h2>
+
+    <input type="text" id="college_id" placeholder="College ID (COL001)" required>
+    <input type="text" id="name" placeholder="College Name" required>
+
+    <select id="type" required>
+        <option value="">Select Type</option>
+        <option>Government</option>
+        <option>Private</option>
+        <option>Autonomous</option>
+    </select>
+
+    <input type="text" id="affiliated_to" placeholder="Affiliated To (VTU, Pune University)" required>
+    <input type="number" id="established" placeholder="Established Year" required>
+
+    <button type="submit">Add College</button>
+</form>
+
+<script src="../JS/add-college.js"></script>
+
+</body>
+</html>

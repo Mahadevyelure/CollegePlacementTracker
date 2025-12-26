@@ -1,0 +1,102 @@
+#header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 32px;
+    background: linear-gradient(120deg, #020024, #090979, #00d4ff);
+    color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- LOGO ---------- */
+#header h1 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffffff, #9fd3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- SEARCH ---------- */
+#header > input {
+    height: 46px;
+    width: 28%;
+    border-radius: 30px;
+    border: none;
+    padding: 0 22px;
+    font-size: 16px;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+#header > input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#header > input:focus {
+    background: white;
+    color: #004e92;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+}
+
+/* ---------- NAV ---------- */
+#navlinks {
+    height: 60px;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 40px;
+    backdrop-filter: blur(12px);
+
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* ---------- LINKS ---------- */
+#navlinks a {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+/* underline animation */
+#navlinks a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0;
+    height: 2px;
+    background: #00d4ff;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+#navlinks a:hover::after {
+    width: 60%;
+}
+
+#navlinks a:hover {
+    color: #00d4ff;
+    background: rgba(255, 255, 255, 0.1);
+}
