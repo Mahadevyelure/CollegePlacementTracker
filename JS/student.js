@@ -18,8 +18,9 @@ let displayStudents = async(stds) => {
     std_cont.innerHTML = stds.map((ele) => `
         <div class="std-card"> 
             <img src="${ele.personal_info.profile_image}" alt="Student Image">
+            <H3><strong>Student Id:</strong> ${ele.student_id}</H3>
             <h4>${ele.personal_info.full_name}</h4>
-            <p><strong>College:</strong> ${ele.academic_info.college_id}</p>
+            <p><strong>College Id:</strong> ${ele.academic_info.college_id}</p>
             <p><strong>Status:</strong> ${ele.placement_status}</p>
         </div>
     `).join("");

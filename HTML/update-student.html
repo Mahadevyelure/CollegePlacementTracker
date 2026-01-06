@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Student Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2bb0a6;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2bb0a6;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #239a91;
+        }
+    </style>
+</head>
+<body>
+
+<form id="updateStatusForm">
+    <h2>Update Student</h2>
+
+    <input type="text" id="student_id" placeholder="Student ID (STU10003)" required>
+
+    <input type="text" id="profile_image" placeholder="Profile Image URL (optional)">
+
+    <select id="placement_status">
+        <option value="">Select Status (optional)</option>
+        <option>Placed</option>
+        <option>Not Placed</option>
+    </select>
+
+    <button type="submit">Update</button>
+</form>
+
+
+<script src="../JS/update-student.js"></script>
+</body>
+</html>
